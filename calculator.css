@@ -1,0 +1,287 @@
+/* ===== FAQs Section Styles ===== */
+.faqs-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.faqs-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6b3f24;
+  margin-bottom: 1rem;
+}
+
+.faqs-section .section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.faq-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.faq-button {
+  background: white;
+  border: none;
+  padding: 1.5rem;
+  font-weight: 600;
+  color: #6b3f24;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.faq-button:not(.collapsed) {
+  background: linear-gradient(135deg, #6b3f24, #8b5a3c);
+  color: white;
+  box-shadow: none;
+}
+
+.faq-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.faq-button:hover {
+  background: linear-gradient(135deg, #6b3f24, #8b5a3c);
+  color: white;
+}
+
+.faq-answer {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+/* ===== Gold Calculator Section Styles ===== */
+.gold-calculator-section {
+  background: linear-gradient(135deg, #f1f3f4 0%, #e8eaf6 100%);
+}
+
+.calculator-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+/* Live Prices Section */
+.live-prices-section {
+  background: linear-gradient(135deg, #d7ae94, #e6d180);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.price-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(12, 12, 12, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #524c4c;
+  margin-bottom: 0.5rem;
+}
+
+.price-unit {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.price-change {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.price-change.positive {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.price-change.negative {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+}
+
+.last-updated {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Calculator Form */
+.calculator-input {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.calculator-input:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #6b3f24;
+  margin-bottom: 0.8rem;
+}
+
+.calculate-btn {
+  background: linear-gradient(135deg, #ffc107, #ffb300);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.calculate-btn:hover {
+  background: linear-gradient(135deg, #ffb300, #ff8f00);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+}
+
+/* Results Section */
+.results-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid #ffc107;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-item {
+  text-align: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.result-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6b3f24;
+}
+
+.result-value.highlight {
+  color: #28a745;
+  background: linear-gradient(135deg, #28a745, #20c997);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.calculation-breakdown {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+/* Responsive Design for Calculator */
+@media (max-width: 768px) {
+  .calculator-card {
+    padding: 1.5rem;
+  }
+  
+  .live-prices-section {
+    padding: 1.5rem;
+  }
+  
+  .price-value {
+    font-size: 1.5rem;
+  }
+  
+  .faqs-section .section-title {
+    font-size: 2rem;
+  }
+  
+  .faq-button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  
+  .faq-answer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .calculator-card {
+    padding: 1rem;
+  }
+  
+  .live-prices-section {
+    padding: 1rem;
+  }
+  
+  .price-card {
+    padding: 1rem;
+  }
+  
+  .calculate-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .result-value {
+    font-size: 1.5rem;
+  }
+}

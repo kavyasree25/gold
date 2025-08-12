@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <style>
+    /* Additional responsive fixes */
+    @media (max-width: 991.98px) {
+      .navbar-toggler {
+        padding: 4px 8px !important;
+        font-size: 1.25rem !important;
+        line-height: 1 !important;
+        background-color: transparent !important;
+        border: 1px solid rgba(105, 10, 50, 0.5) !important;
+        border-radius: 0.375rem !important;
+      }
+      
+      .navbar-toggler:focus {
+        text-decoration: none !important;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.25rem rgba(105, 10, 50, 0.25) !important;
+      }
+      
+      .navbar-collapse {
+        margin-top: 0.5rem !important;
+      }
+    }
+
+    /* Floating Action Buttons */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .call-btn {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .floating-buttons {
+        right: 15px;
+        bottom: 15px;
+      }
+      
+      .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/2695556-middle.webp" alt="Logo" />
+        Sristar Gold Company
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="dummy.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus .html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">Branches</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1>Navbar Toggle Test</h1>
+    <p>Resize your browser window to test the mobile navbar toggle functionality.</p>
+    <p>The hamburger menu should be visible on mobile screens and clicking it should expand/collapse the navigation menu.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Debug Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Test page navbar loaded');
+      const toggler = document.querySelector('.navbar-toggler');
+      const collapse = document.querySelector('.navbar-collapse');
+      
+      if (toggler && collapse) {
+        console.log('Navbar elements found successfully');
+        toggler.addEventListener('click', function() {
+          console.log('Navbar toggler clicked - should toggle menu');
+        });
+      } else {
+        console.log('ERROR: Navbar elements not found');
+      }
+    });
+  </script>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/6366333444" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916366333444" class="floating-btn call-btn" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+</body>
+</html>

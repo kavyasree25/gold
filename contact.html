@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sristar Gold Company - Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css" />
+  
+  <style>
+    /* Additional responsive navbar fixes for mobile */
+    @media (max-width: 991.98px) {
+      .navbar-toggler {
+        padding: 4px 8px !important;
+        font-size: 1.25rem !important;
+        line-height: 1 !important;
+        background-color: transparent !important;
+        border: 1px solid rgba(105, 10, 50, 0.5) !important;
+        border-radius: 0.375rem !important;
+      }
+      
+      .navbar-toggler:focus {
+        text-decoration: none !important;
+        outline: 0 !important;
+        box-shadow: 0 0 0 0.25rem rgba(105, 10, 50, 0.25) !important;
+      }
+      
+      .navbar-collapse {
+        margin-top: 0.5rem !important;
+      }
+    }
+
+    /* Floating Action Buttons */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .call-btn {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .floating-buttons {
+        right: 15px;
+        bottom: 15px;
+      }
+      
+      .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  </style>
+  </head>
+<body>
+
+ <!-- Header Section -->
+  <div class="container-fluid top-header">
+    <div class="row align-items-center px-3">
+      <div class="col-md-6 col-12 address">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>Sristar Gold Company,280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</span>
+      
+      </div>
+      
+           <div class="col-md-6 col-12 company-brand d-flex align-items-center justify-content-md-end justify-content-start gap-3">
+  <!-- Facebook Icon -->
+  <a href="https://www.facebook.com/sristargold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Facebook">
+    <i class="bi bi-facebook me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Instagram Icon -->
+  <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Instagram">
+    <i class="bi bi-instagram me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Twitter Icon -->
+  <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Twitter">
+    <i class="bi bi-twitter me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Company Name -->
+  <span class="fw-bold" style="color: #0b0c0c;"></span>
+</div>
+
+
+        <!-- <span class="company-name">Sristar Gold Company</span> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/2695556-middle.webp" alt="Logo" />
+        Sristar Gold Company
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus .html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">Branches</a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+             <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="header">📞 Contact Us - Sristar Gold</div>
+
+<!-- Icons Section with Background Image -->
+ 
+<div style="background-image: url('Images/extra3.jpg'); background-size: cover; background-position: center; padding: 40px 0;">
+  <div class="container d-flex align-items-center justify-content-center icon-row">
+    <div class="row justify-content-center text-center">
+      <div class="col-6 col-md-3">
+        <div class="icon-box"><i class="bi bi-at"></i></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="icon-box"><i class="bi bi-envelope-fill"></i></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="icon-box"><i class="bi bi-telephone-fill"></i></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="icon-box"><i class="bi bi-phone-fill"></i></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Header -->
+  <!-- <div class="contact-header">
+    📞 Contact Us - Sristar Gold
+  </div> -->
+
+  <!-- Contact Section -->
+  <div class="container my-5">
+    <div class="row align-items-center gy-4">
+      
+      <!-- Left: Form -->
+      <div class="col-md-6">
+        <div class="contact-box">
+          <h4 class="mb-4 text-center text-uppercase text-warning">We’d Love to Hear From You!</h4>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" required placeholder="Enter your name" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control" required placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-gold px-5">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Thank You Box -->
+        <div class="thankyou-box mt-4 d-none" id="thankYouBox">
+          <i class="bi bi-check-circle-fill"></i>
+          <p>Thank you for reaching out to sristar Gold Company! 🌟<br>We will get back to you shortly.</p>
+        </div>
+      </div>
+
+     <!-- Right: Image with Background Image -->
+<div class="col-md-6">
+  <div class="image-box h-100 p-3 rounded" 
+       style="background-image: url(''); 
+              background-size: cover; 
+              background-position: center; 
+              border: 2px solid gold; 
+              box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);">
+               
+    <img src="Images/download.png" 
+         alt="Gold Jewellery" 
+         class="img-fluid rounded shadow">
+  </div>
+</div>
+
+
+    </div>
+  </div>
+
+    <!-- Header -->
+  <div class="gold-header">
+    <img src="Images/2695556-middle.webp" alt="Company Logo" class="company-logo">
+    <div class="company-name">Sristar Gold Company</div>
+  </div>
+
+
+
+<!--Footer-->
+
+
+<!-- ======= Business Footer Start ======= -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <h5 class="text-uppercase text-warning mb-3"><b>SRISTAR GOLD COMPANY</b></h5>
+        <p class="footer-description">
+       Transform your gold into immediate rewards, hassle-free and secure.
+At SriStar Gold, we value your trust as much as your gold
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Quick links</h6>
+        <ul class="list-unstyled">
+           <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="aboutus .html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="branches.html" class="footer-link">Branches</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us </a></li>
+          <li><a href="Awards.html" class="footer-link">Awards</a></li>
+                <li><a href="career.html" class="footer-link">Career</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Contact</h6>
+        <p class="contact-info"><i class="fas fa-map-marker-alt me-2"></i>280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</p>
+        <p class="contact-info"><i class="fas fa-envelope me-2"></i> sristargold@gmail.com</p>
+        <p class="contact-info"><i class="fas fa-phone me-2"></i>6366333444</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Newsletter</h6>
+        <p>Subscribe to receive business insights and news.</p>
+        <form action="#" method="POST" class="mt-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning w-100">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Social Icons -->
+        <div class="social-icons mt-4">
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/sristargold" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6366333444" target="_blank" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary" />
+    <div class="text-center small text-muted">
+      &copy; 2025 sristar gold Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+<!-- ======= Business Footer End ======= -->
+
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/6366333444" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916366333444" class="floating-btn call-btn" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

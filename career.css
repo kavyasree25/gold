@@ -1,0 +1,434 @@
+/* Career Page Specific Styles */
+
+/* Hero Section */
+.career-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('images/goldbackground.jpg') center/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(107, 63, 36, 0.8), rgba(221, 183, 18, 0.3));
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  color: #ffc107;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #f8f9fa;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Company Description */
+.company-description {
+  font-size: 1.3rem;
+  color: #6b3f24;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6b3f24;
+  margin-bottom: 2rem;
+}
+
+/* Feature Cards */
+.feature-card {
+  background:linear-gradient(135deg, rgb(232, 237, 237), #dfd790);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  margin-bottom: 2rem;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffc107, #ffeb3b);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.feature-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.feature-content h4 {
+  color: #6b3f24;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.feature-content p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Apply Now Section */
+.apply-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #6b3f24;
+  margin-bottom: 1rem;
+}
+
+.apply-subtitle {
+  font-size: 1.8rem;
+  color: #6b3f24;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.application-form-container {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.application-form .form-control,
+.application-form .form-select {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.application-form .form-control:focus,
+.application-form .form-select:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.file-upload-container {
+  position: relative;
+}
+
+.file-upload-label {
+  display: block;
+  background: #6b3f24;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload-label:hover {
+  background: #5a3420;
+}
+
+.file-upload-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* How to Apply Section */
+.how-to-apply-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.application-steps {
+  margin-top: 3rem;
+}
+
+.step-card {
+  background:linear-gradient(135deg, rgb(241, 242, 244), #e3d979);
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #ffc107, #ffeb3b);
+  color: #6b3f24;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto 1.5rem;
+}
+
+.step-card h5 {
+  color: #6b3f24;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.step-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Info Career */
+.contact-info-career p {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Buttons */
+.btn-warning {
+  background: linear-gradient(135deg, #ffc107, #ffeb3b);
+  border: none;
+  color: #6b3f24;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn-warning:hover {
+  background: linear-gradient(135deg, #ffeb3b, #ffc107);
+  color: #6b3f24;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 193, 7, 0.4);
+}
+
+.btn-dark {
+  background: #6b3f24;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn-dark:hover {
+  background: #5a3420;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(107, 63, 36, 0.4);
+}
+
+/* Active nav link styling */
+/* .nav-link.active {
+  color: #302c2c !important;
+  font-weight: 600;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .apply-title {
+    font-size: 2.2rem;
+  }
+  
+  .apply-subtitle {
+    font-size: 1.4rem;
+  }
+  
+  .application-form-container {
+    padding: 2rem;
+  }
+  
+  .feature-card {
+    padding: 2rem;
+  }
+  
+  .step-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .company-description {
+    font-size: 1.1rem;
+  }
+  
+  .contact-info-career p {
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .apply-title {
+    font-size: 2rem;
+  }
+  
+  .apply-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .application-form-container {
+    padding: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  .step-card {
+    padding: 1.5rem;
+  }
+  
+  .feature-content h4 {
+    font-size: 1.3rem;
+  }
+  
+  .step-card h5 {
+    font-size: 1.2rem;
+  }
+  
+  .company-description {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Form validation styles */
+.form-control:invalid {
+  border-color: #dc3545;
+}
+
+.form-control:valid {
+  border-color: #28a745;
+}
+
+/* Loading animation for form submission */
+.btn-dark:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Hover effects for better UX */
+.feature-card,
+.step-card {
+  cursor: pointer;
+}
+
+/* Background patterns */
+.bg-warning {
+  background: linear-gradient(135deg, #ffc107, #ffeb3b) !important;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0a800;
+}

@@ -1,0 +1,303 @@
+/* Header */
+.top-header {
+      background: linear-gradient(to right, #e2d0d0, #f4ee7c);
+      padding: 10px 0;
+      color: #080808;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+    }
+
+    .top-header .address {
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-header .company-brand {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    .company-brand i {
+      background: #0a0a0a;
+      color: gold;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .company-brand i:hover {
+      transform: scale(1.1);
+      background: gold;
+      color: #0f0f0f;
+    }
+
+    .company-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px gold;
+    }
+
+  @media (max-width: 767px) {
+  .top-header .address {
+    font-size: 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-header .company-brand {
+    justify-content: flex-end;  /* ✅ Right-align icons */
+    flex-direction: row;        /* ✅ Keep icons in a horizontal row */
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+}
+
+
+    /* Nab Bar */
+    .navbar-custom {
+      background: linear-gradient(to right, #f9c4d2, #ffd700); /* Pinkish to Gold */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #171818 !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px gold;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #1a1819 !important;
+      margin-right: 10px;
+    }
+
+    .nav-link:hover {
+      color: #000;
+      text-shadow: 1px 1px 1px gold;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28105, 10, 50, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+/* Reset body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf7;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('Images/chains3.jpg') no-repeat center center/cover;
+  height: 60vh;
+  position: relative;
+  padding: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  color: #0a0a0a;
+
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #5a473a;
+}
+
+/* Card Styling */
+/* Stylish Chain Card */
+/* Stylish, Custom-Shaped Chain Card */
+/* Chain Card Container */
+.chain-card {
+  background-color: #fdf7f0;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.chain-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖼️ Image Style — Fill Card & Curve Bottom */
+.chain-card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover; /* Fill card, crop if needed */
+  display: block;
+  background-color: #fff4e9;
+
+  /* Rounded top corners */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  /* Curved bottom effect */
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+/* Card Body */
+.chain-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .chain-card img {
+    height: 220px;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 50% 100%, 0 93%);
+  }
+}
+
+
+/* Buttons */
+.btn-custom {
+  background-color: #c59d5f;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #a37d3d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 40vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .chain-card img {
+    height: 220px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+
+
+
+/* === Gold Header === */
+.gold-header {
+  background: linear-gradient(90deg, #6f42c1, #7e57c2);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gold-header .company-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid gold;
+  box-shadow: 0 0 15px #fff, 0 0 25px gold;
+  margin-right: 15px;
+}
+
+.gold-header .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFD700, #FFC107, #FFECB3);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Fallback */
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+@keyframes shine {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Mobile Responsive Header */
+@media (max-width: 576px) {
+  .gold-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gold-header .company-logo {
+    margin: 0 auto 10px;
+  }
+}
+
+/*footer*/
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.social-icons a {
+  background: #0e0d0d;
+      color: gold;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 1rem;
+      transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+transform: scale(1.1);
+      background: gold;
+      color: #0a0a0a;
+}

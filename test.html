@@ -1,0 +1,1090 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sristar Gold Company</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="testi.css" />
+  <link rel="stylesheet" href="calculator.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Floating Action Buttons */
+    .floating-buttons {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .floating-btn:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    .whatsapp-btn {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+    }
+
+    .call-btn {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      .floating-buttons {
+        right: 15px;
+        bottom: 15px;
+      }
+      
+      .floating-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Header Section -->
+  <div class="container-fluid top-header">
+    <div class="row align-items-center px-3">
+      <div class="col-md-6 col-12 address">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>Sristar Gold Company,280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</span>
+      </div>
+      
+      <div class="col-md-6 col-12 company-brand d-flex align-items-center justify-content-md-end justify-content-start gap-3">
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/sristargold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Facebook">
+          <i class="bi bi-facebook me-1"></i> <span style="font-size: 0.85rem;"></span>
+        </a>
+
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Instagram">
+          <i class="bi bi-instagram me-1"></i> <span style="font-size: 0.85rem;"></span>
+        </a>
+
+        <!-- Twitter Icon -->
+        <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-dark fs-5 d-flex align-items-center" title="Twitter">
+          <i class="bi bi-twitter me-1"></i> <span style="font-size: 0.85rem;"></span>
+        </a>
+
+        <!-- Company Name -->
+        <span class="fw-bold" style="color: #0b0c0c;"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/2695556-middle.webp" alt="Logo" />
+        Sristar Gold Company
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus .html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">Branches</a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+            <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <!-- image Section-->
+
+ <div id="carouselExampleFade" class="carousel slide carousel-fade custom-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="row g-0">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="Images/crousel  2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gold Slide 2">
+        </div>
+        <div class="col-md-6 quote-box d-flex justify-content-center align-items-center order-1 order-md-2">
+          <div class="quote-text text-center">
+            <h1 class="carousel-title fw-bold">WELCOME TO SRISTAR</h1>
+            <h2 class="carousel-subtitle">"Shine through every era with gold."</h2>
+            <p class="carousel-description">Buy, sell, and prosper with us.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="row g-0">
+        <div class="col-md-6 order-2 order-md-1">
+          <img src="Images/crousel 3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Gold Slide 3">
+        </div>
+        <div class="col-md-6 quote-box d-flex justify-content-center align-items-center order-1 order-md-2">
+          <div class="quote-text text-center">
+            <h1 class="carousel-title fw-bold">WELCOME TO SRISTAR</h1>
+            <h2 class="carousel-subtitle">"Your legacy begins with pure gold."</h2>
+            <p class="carousel-description">Trusted service. Guaranteed value.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+ 
+<section id="collections" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Collections</h2>
+    <div class="row g-4">
+
+      <!-- Gold Card -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="collection-card gold-card">
+          <div class="card-overlay">
+            <h3>Gold Collection</h3>
+            <a href="gold collection.html" class="btn btn-light mt-2">Explore Gold</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Silver Card -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <div class="collection-card silver-card">
+          <div class="card-overlay">
+            <h3>Silver Collection</h3>
+            <a href="silver collection.html" class="btn btn-light mt-2">Explore Silver</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diamond Card -->
+      <div class="col-lg-4 col-md-12 col-12 mb-4">
+        <div class="collection-card diamond-card">
+          <div class="card-overlay">
+            <h3>Diamond Collection</h3>
+            <a href="Diamond.html" class="btn btn-light mt-2">Explore Diamonds</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<!-- category -->
+<section class="shop-category py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Shop By Category</h2>
+    <div class="category-grid">
+      <a href="bangles.html" class="category-card">
+        <img src="Images/bangles.jpg" alt="Bangles">
+        <div class="category-name">Bangles</div>
+      </a>
+      <a href="chains.html" class="category-card">
+        <img src="Images/chains.jpg" alt="Chains">
+        <div class="category-name">Chains</div>
+      </a>
+      <a href="earrings.html" class="category-card">
+        <img src="Images/ear rings.jpg" alt="Earrings">
+        <div class="category-name">Earrings</div>
+      </a>
+      <a href="Necklace.html" class="category-card">
+        <img src="Images/necklace.jpg" alt="Necklaces">
+        <div class="category-name">Necklaces</div>
+      </a>
+      <a href="rings.html" class="category-card">
+        <img src="Images/ring1.jpg" alt="rings">
+        <div class="category-name">Rings</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--steps Section -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5 text-uppercase" style="color: #6b3f24;">Steps to Sell Gold</h2>
+  </div>
+
+  <!-- Main Section -->
+  <div class="container">
+    <div class="gold-box">
+      <div class="row g-0">
+    
+    <!-- Left: Image -->
+        <div class="col-lg-6 col-md-12 gold-image-container">
+          <img src="images/building.webp" alt="Sristar Building" class="img-fluid gold-building-img">
+        </div>
+
+    <!-- Right: Steps Content -->
+        <div class="col-lg-6 col-md-12 gold-content">
+      <h3>Follow These Easy Steps</h3>
+      <ol class="steps-list">
+        <li>
+          <span class="step-number">1.</span> Visit the nearest branch
+          <button class="toggle-icon" onclick="toggleStep('step1', this)"><i class="bi bi-chevron-down"></i></button>
+          <div class="extra-content" id="step1">
+            Walk into any of our Sristar branches. Our trained staff will welcome you and explain the gold selling process.
+          </div>
+        </li>
+        <li>
+          <span class="step-number">2.</span> Test purity in front of you
+          <button class="toggle-icon" onclick="toggleStep('step2', this)"><i class="bi bi-chevron-down"></i></button>
+          <div class="extra-content" id="step2">
+            We use certified German machines to test your gold’s purity without any damage and right in front of you.
+          </div>
+        </li>
+        <li>
+          <span class="step-number">3.</span> Get instant quote
+          <button class="toggle-icon" onclick="toggleStep('step3', this)"><i class="bi bi-chevron-down"></i></button>
+          <div class="extra-content" id="step3">
+            Based on current market rates and purity, we provide you with a best-price quote instantly.
+          </div>
+        </li>
+        <li>
+          <span class="step-number">4.</span> Complete documentation
+          <button class="toggle-icon" onclick="toggleStep('step4', this)"><i class="bi bi-chevron-down"></i></button>
+          <div class="extra-content" id="step4">
+            Provide your valid ID proof like Aadhar or PAN. Our process is 100% legal and transparent.
+          </div>
+        </li>
+        <li>
+          <span class="step-number">5.</span> Receive immediate payment
+          <button class="toggle-icon" onclick="toggleStep('step5', this)"><i class="bi bi-chevron-down"></i></button>
+          <div class="extra-content" id="step5">
+            Once everything is verified, you’ll receive payment instantly via cash, bank transfer, or UPI.
+          </div>
+        </li>
+      </ol>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!--Services--> 
+<!-- Services Section -->
+<section class="py-5" style="background-image: url('Images/service.jpg'); background-size: cover; background-position: center;">
+  <div class="container text-center text-white">
+    <h2 class="section-title mb-5">Our Gold Services</h2>
+    <div class="row g-4">
+
+      <!-- Card Template (Repeat for all) -->
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/gold-bars.png" alt="Buy Gold">
+          </div>
+          <h5>We Buy Gold</h5>
+          <p>Get instant cash for your gold at the best market price with full purity verification.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/money-bag.png" alt="Release Pledged Gold">
+          </div>
+          <h5>Release Pledged Gold</h5>
+          <p>We help release your pledged gold from any bank or financier quickly and legally.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/jewelry.png" alt="Gold on Rent">
+          </div>
+          <h5>Gold on Rent</h5>
+          <p>Rent premium gold jewelry for weddings, family functions, and grand events.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/refresh.png" alt="Repledge Gold">
+          </div>
+          <h5>Repledge Gold</h5>
+          <p>Get better interest rates and flexible repayment options by repledging your gold.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/auction.png" alt="Sell Gold">
+          </div>
+          <h5>Sell Gold</h5>
+          <p>Sell your old, unused, or damaged gold for top market rates with instant payment.</p>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-4">
+        <div class="service-card h-100">
+          <div class="icon mb-3">
+            <img src="https://img.icons8.com/ios-filled/50/ffd700/home-page.png" alt="Doorstep Service">
+          </div>
+          <h5>Doorstep Service</h5>
+          <p>Schedule a home visit to evaluate and sell gold securely, from the comfort of your home.</p>
+        </div>
+      </div>
+
+    </div>
+ <div class="container text-center my-5" >
+    <a href="services.html" class="btn btn-primary btn-lg">view All Services</a>
+  </div>
+  <style>
+    .btn-primary{
+      background-color: #6b3f24;
+      color: white;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    .btn-primary:hover{
+      background-color:#ddb712ac ;
+      color:rgb(11, 11, 11);
+    }
+  </style>
+
+</section>
+
+
+<!--faq section-->
+
+<section class="faq-section position-relative py-5">
+  <div class="faq-border-frame"></div> <!-- Decorative Frame -->
+<!-- Center Image -->
+<img src="Images/Untitled Session3229-1-Photoroom.png" alt="Decorative Centerpiece" class="faq-centerpiece">
+
+  <div class="container position-relative">
+    <!-- Quote Positioned Top Right -->
+    <div class="row justify-content-end mb-4">
+      <div class="col-lg-6 text-end">
+        <div class="faq-quote">
+          <p>“Trust is the gold standard of our service.”</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="row gy-4">
+      <div class="col-lg-7">
+        <h2 class="mb-4 section-heading">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+
+          <!-- Q1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How do I sell my gold?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Bring your gold to our store for evaluation. We offer the best market price instantly.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                What documents are needed to release pledged gold?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                You will need your original ID proof and pledge receipt to initiate the release process.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Can I rent gold jewelry for a wedding?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, we offer premium gold jewelry for rent with refundable deposits.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center mt-5">
+      <a href="faqs.html" class="btn btn-dark px-5 py-2 rounded-pill">Ask Us More</a>
+    </div>
+  </div>
+</section>
+
+<!--assurence-->
+
+ <section class="assurance-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0 animate-on-scroll fade-left">
+          <h1 class="company-title">Sristar Gold Company <span class="highlight">Commitment</span></h1>
+          <p class="subtitle">Designed by masters, embraced by you</p>
+        </div>
+
+        <!-- Right Icons -->
+        <div class="col-lg-6 animate-on-scroll fade-right">
+          <div class="row text-center">
+            <!-- Icon 1 -->
+            <div class="col-4 animate-on-scroll fade-up delay-1">
+              <img src="https://img.icons8.com/ios-filled/50/000000/hammer.png" alt="Exquisite Craft" />
+              <p class="feature-title">Exquisite Craft</p>
+            </div>
+            <!-- Icon 2 -->
+            <div class="col-4 animate-on-scroll fade-up delay-2">
+              <img src="https://img.icons8.com/ios-filled/50/000000/earth-planet.png" alt="Consciously Chosen" />
+              <p class="feature-title">Consciously Chosen</p>
+            </div>
+            <!-- Icon 3 -->
+            <div class="col-4 animate-on-scroll fade-up delay-3">
+              <img src="https://img.icons8.com/ios-filled/50/000000/diamond.png" alt="Pure Transparency" />
+              <p class="feature-title">Pure Transparency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+   <!-- Scroll Animation Script -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
+  </script>
+
+
+  <script>
+    // Toggle menu on small screens
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    mobileMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+ 
+<!-- Customer Testimonials Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-heading">Voices That Build Our Legacy</h2>
+    </div>
+
+    <div class="testimonial-slider">
+    <div class="slider-track">
+      <!-- First 5 Cards -->
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Larissa Grant" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Excellent service at the Malleswaram branch the sales executive were very professional and
+                    polite.the service is safe and fast they offered free gold carat testing i got a great
+                    price for my metals.
+          </p>
+          <div class="testimonial-name">Murugesh R</div>
+          <div class="testimonial-role"></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="James Carter" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            I get best price from this company for my gold and well deserved service from the all
+                    staff.
+          </p>
+          <div class="testimonial-name">Sunil Raj</div>
+          <div class="testimonial-role"></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Lee" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Sristar gold company helped me to end gold loan.i aslo got very good price for selling my
+                    gold.Happy with the service.
+          </p>
+          <div class="testimonial-name">Vishwanath Gowda</div>
+          <div class="testimonial-role"></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Michael Chen" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+“I was skeptical at first, but the purity testing was done right in front of me using machines. Everything was transparent and quick. Highly recommend!”
+          </p>
+          <div class="testimonial-name">yashwanth</div>
+          <div class="testimonial-role"></div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Emma Brown" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+          “Best experience selling gold! From entering the branch to receiving payment, the process took less than 30 minutes. No hidden charges.”
+          </p>
+          <div class="testimonial-name">Meena</div>
+          <div class="testimonial-role"></div>
+        </div>
+      </div>
+
+      <!-- Repeat same 5 cards again for seamless loop -->
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Larissa Grant" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus nisl, luctus ut viverra quis, gravida pellentesque mi.
+            Fusce imperdiet nibh sed libero tristique, at faucibus velit interdum.
+          </p>
+          <div class="testimonial-name">Larissa Grant</div>
+          <div class="testimonial-role">Brand Manager</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="James Carter" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Aenean consectetur sollicitudin mauris, non ultricies ante gravida fringilla. Integer bibendum enim et orci viverra placerat.
+          </p>
+          <div class="testimonial-name">James Carter</div>
+          <div class="testimonial-role">Product Lead</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophia Lee" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Praesent sit amet tristique risus. Quisque facilisis lorem a dictum tempus. Nullam vehicula justo non dictum consectetur.
+          </p>
+          <div class="testimonial-name">Sophia Lee</div>
+          <div class="testimonial-role">Marketing Director</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="Michael Chen" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Vivamus eget neque vel enim cursus lacinia. Integer sed sapien at justo convallis porttitor.
+          </p>
+          <div class="testimonial-name">Michael Chen</div>
+          <div class="testimonial-role">UX Designer</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-img">
+          <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Emma Brown" />
+        </div>
+        <div class="testimonial-content">
+          <div class="quote-icon">“</div>
+          <p class="testimonial-text">
+            Sed dignissim purus ut leo dictum, in imperdiet tortor consectetur. Aliquam erat volutpat.
+          </p>
+          <div class="testimonial-name">Emma Brown</div>
+          <div class="testimonial-role">Content Strategist</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Gold Calculator Section -->
+<section class="gold-calculator-section py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h2 class="section-title">Gold Price <span class="text-warning">Calculator</span></h2>
+        <p class="section-subtitle">Calculate the current value of your gold instantly</p>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="calculator-card">
+          
+          <!-- Live Gold Prices Display -->
+          <div class="live-prices-section mb-4">
+            <h4 class="text-center mb-4">
+              <i class="fas fa-chart-line text-warning me-2"></i>
+              Today's Live Gold Rates
+            </h4>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="price-card">
+                  <div class="price-header">
+                    <i class="fas fa-coins text-warning"></i>
+                    <span>24K Gold</span>
+                  </div>
+                  <div class="price-value" id="gold24k">₹6,850</div>
+                  <div class="price-unit">per gram</div>
+                  <div class="price-change positive">
+                    <i class="fas fa-arrow-up"></i> +₹45 (0.66%)
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="price-card">
+                  <div class="price-header">
+                    <i class="fas fa-ring text-warning"></i>
+                    <span>22K Gold</span>
+                  </div>
+                  <div class="price-value" id="gold22k">₹6,280</div>
+                  <div class="price-unit">per gram</div>
+                  <div class="price-change positive">
+                    <i class="fas fa-arrow-up"></i> +₹41 (0.66%)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="last-updated text-center mt-3">
+              <small class="text-muted">
+                <i class="fas fa-clock me-1"></i>
+                Last updated: <span id="lastUpdated">Today, 2:30 PM</span>
+              </small>
+            </div>
+          </div>
+
+          <!-- Calculator Form -->
+          <div class="calculator-form">
+            <form id="goldCalculatorForm">
+              <div class="row g-4">
+                
+                <!-- City Selection -->
+                <div class="col-md-4">
+                  <label for="city" class="form-label">
+                    <i class="fas fa-map-marker-alt text-warning me-2"></i>
+                    Select City
+                  </label>
+                  <select class="form-select calculator-input" id="city" required>
+                    <option value="">Choose City</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="mysore">Mysore</option>
+                    <option value="mangalore">Mangalore</option>
+                    <option value="hubli">Hubli</option>
+                    <option value="davangere">Davangere</option>
+                    <option value="raichur">Raichur</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                  </select>
+                </div>
+
+                <!-- Gold Weight -->
+                <div class="col-md-4">
+                  <label for="weight" class="form-label">
+                    <i class="fas fa-weight text-warning me-2"></i>
+                    Gold Weight
+                  </label>
+                  <div class="input-group">
+                    <input type="number" class="form-control calculator-input" id="weight" placeholder="Enter weight" min="0.1" step="0.1" required>
+                    <select class="form-select calculator-input" id="weightUnit" style="max-width: 100px;">
+                      <option value="grams">Grams</option>
+                      <option value="tola">Tola</option>
+                      <option value="ounce">Ounce</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Gold Carat -->
+                <div class="col-md-4">
+                  <label for="carat" class="form-label">
+                    <i class="fas fa-gem text-warning me-2"></i>
+                    Gold Carat
+                  </label>
+                  <select class="form-select calculator-input" id="carat" required>
+                    <option value="">Select Carat</option>
+                    <option value="24">24K (99.9% Pure)</option>
+                    <option value="22">22K (91.6% Pure)</option>
+                    <option value="21">21K (87.5% Pure)</option>
+                    <option value="20">20K (83.3% Pure)</option>
+                    <option value="18">18K (75.0% Pure)</option>
+                    <option value="16">16K (66.7% Pure)</option>
+                    <option value="14">14K (58.3% Pure)</option>
+                    <option value="12">12K (50.0% Pure)</option>
+                    <option value="10">10K (41.7% Pure)</option>
+                  </select>
+                </div>
+
+              </div>
+
+              <!-- Calculate Button -->
+              <div class="text-center mt-4">
+                <button type="button" class="btn btn-warning btn-lg calculate-btn" onclick="calculateGoldValue()">
+                  <i class="fas fa-calculator me-2"></i>
+                  Calculate Gold Value
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Results Section -->
+          <div class="calculation-results mt-4" id="calculationResults" style="display: none;">
+            <div class="results-card">
+              <h5 class="text-center mb-4">
+                <i class="fas fa-money-bill-wave text-warning me-2"></i>
+                Your Gold Value
+              </h5>
+              
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="result-item">
+                    <div class="result-label">Market Value</div>
+                    <div class="result-value" id="marketValue">₹0</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="result-item">
+                    <div class="result-label">Our Offer Price</div>
+                    <div class="result-value highlight" id="offerPrice">₹0</div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="calculation-breakdown mt-3">
+                <small class="text-muted">
+                  <strong>Calculation:</strong> <span id="calculationBreakdown"></span>
+                </small>
+              </div>
+              
+              <div class="text-center mt-4">
+                <a href="contact.html" class="btn btn-success btn-lg">
+                  <i class="fas fa-phone me-2"></i>
+                  Get Best Quote Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+     <!-- Header -->
+<div class="gold-header">
+  <img src="Images/2695556-middle.webp" alt="Company Logo" class="company-logo">
+  <div class="company-name">Sristar Gold Company</div>
+</div>
+
+
+<!--steps section js-->
+<script>
+  function toggleStep(stepId, button) {
+    const content = document.getElementById(stepId);
+    const icon = button.querySelector('i');
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      icon.classList.remove("bi-chevron-up");
+      icon.classList.add("bi-chevron-down");
+    } else {
+      content.style.display = "block";
+      icon.classList.remove("bi-chevron-down");
+      icon.classList.add("bi-chevron-up");
+    }
+  }
+
+  // Optional: Hide all extra content initially
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".extra-content").forEach(el => {
+      el.style.display = "none";
+    });
+  });
+
+  // Gold Calculator JavaScript
+  function calculateGoldValue() {
+    const city = document.getElementById('city').value;
+    const weight = parseFloat(document.getElementById('weight').value);
+    const weightUnit = document.getElementById('weightUnit').value;
+    const carat = parseInt(document.getElementById('carat').value);
+
+    // Validation
+    if (!city || !weight || !carat) {
+      alert('Please fill in all required fields');
+      return;
+    }
+
+    // Convert weight to grams
+    let weightInGrams = weight;
+    if (weightUnit === 'tola') {
+      weightInGrams = weight * 11.664; // 1 tola = 11.664 grams
+    } else if (weightUnit === 'ounce') {
+      weightInGrams = weight * 31.1035; // 1 ounce = 31.1035 grams
+    }
+
+    // Base gold prices (24K)
+    const goldPrices = {
+      'bangalore': 6850,
+      'mysore': 6840,
+      'mangalore': 6845,
+      'hubli': 6835,
+      'davangere': 6830,
+      'raichur': 6825,
+      'chennai': 6860,
+      'hyderabad': 6855
+    };
+
+    // Carat purity percentages
+    const caratPurity = {
+      24: 0.999,
+      22: 0.916,
+      21: 0.875,
+      20: 0.833,
+      18: 0.750,
+      16: 0.667,
+      14: 0.583,
+      12: 0.500,
+      10: 0.417
+    };
+
+    const basePrice = goldPrices[city] || 6850;
+    const purity = caratPurity[carat];
+    const pricePerGram = basePrice * purity;
+    const marketValue = Math.round(pricePerGram * weightInGrams);
+    const offerPrice = Math.round(marketValue * 0.95); // 95% of market value
+
+    // Update results
+    document.getElementById('marketValue').textContent = `₹${marketValue.toLocaleString()}`;
+    document.getElementById('offerPrice').textContent = `₹${offerPrice.toLocaleString()}`;
+    
+    const breakdown = `${weightInGrams.toFixed(2)}g × ₹${pricePerGram.toFixed(0)}/g (${carat}K) in ${city.charAt(0).toUpperCase() + city.slice(1)}`;
+    document.getElementById('calculationBreakdown').textContent = breakdown;
+
+    // Show results
+    document.getElementById('calculationResults').style.display = 'block';
+    document.getElementById('calculationResults').scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Update live prices (simulated)
+  function updateLivePrices() {
+    const now = new Date();
+    const timeString = now.toLocaleTimeString('en-IN', { 
+      hour: '2-digit', 
+      minute: '2-digit',
+      hour12: true 
+    });
+    document.getElementById('lastUpdated').textContent = `Today, ${timeString}`;
+  }
+
+  // Update prices every 30 seconds
+  setInterval(updateLivePrices, 30000);
+  
+  // Initial price update
+  document.addEventListener('DOMContentLoaded', updateLivePrices);
+</script>
+<!--Footer-->
+
+
+<!-- ======= Business Footer Start ======= -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <h5 class="text-uppercase text-warning mb-3"><b>SRISTAR GOLD COMPANY</b></h5>
+        <p class="footer-description">
+       Transform your gold into immediate rewards, hassle-free and secure.
+At SriStar Gold, we value your trust as much as your gold
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Quick links</h6>
+        <ul class="list-unstyled">
+           <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="aboutus .html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="branches.html" class="footer-link">Branches</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us </a></li>
+          <li><a href="Awards.html" class="footer-link">Awards</a></li>
+          <li><a href="career.html" class="footer-link">Career</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Contact</h6>
+        <p class="contact-info"><i class="fas fa-map-marker-alt me-2"></i>280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</p>
+        <p class="contact-info"><i class="fas fa-envelope me-2"></i> sristargold@gmail.com</p>
+        <p class="contact-info"><i class="fas fa-phone me-2"></i>6366333444</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Newsletter</h6>
+        <p>Subscribe to receive business insights and news.</p>
+        <form action="#" method="POST" class="mt-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning w-100">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Social Icons -->
+        <div class="social-icons mt-4">
+          <a href="https://x.com/i/flow/login?redirect_after_login=%2FSriStarGold" target="_blank" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/sristargold" target="_blank" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sristargold/" target="_blank" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/6366333444" target="_blank" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary" />
+    <div class="text-center small text-muted">
+      &copy; 2025 sristar gold Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+<!-- ======= Business Footer End ======= -->
+
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/6366333444" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916366333444" class="floating-btn call-btn" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

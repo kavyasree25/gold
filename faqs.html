@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sristar Gold Company - FAQ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+  <style>
+/* Header */
+.top-header {
+      background: linear-gradient(to right, #e2d0d0, #f4ee7c);
+      padding: 10px 0;
+      color: #0d0e0d;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+    }
+
+    .top-header .address {
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-header .company-brand {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 15px;
+    }
+
+    .company-brand i {
+      background: #0d0c0c;
+      color: gold;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .company-brand i:hover {
+      transform: scale(1.1);
+      background: gold;
+      color: #0c0c0c;
+    }
+
+    .company-name {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 2px gold;
+    }
+
+  @media (max-width: 767px) {
+  .top-header .address {
+    font-size: 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-header .company-brand {
+    justify-content: flex-end;  /* ✅ Right-align icons */
+    flex-direction: row;        /* ✅ Keep icons in a horizontal row */
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+}
+
+
+    /* Nab Bar */
+    .navbar-custom {
+      background: linear-gradient(to right, #f9c4d2, #ffd700); /* Pinkish to Gold */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #015e53 !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px gold;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #6b003b !important;
+      margin-right: 10px;
+    }
+
+    .nav-link:hover {
+      color: #000;
+      text-shadow: 1px 1px 1px gold;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28105, 10, 50, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    
+
+
+
+
+    .faq-section{
+      background:linear-gradient(rgb(228, 226, 214) ,rgb(226, 208, 117));
+    }
+        .faq-page-header {
+      background: url('Images/faq.webp') center/cover no-repeat, linear-gradient(135deg, #dab305, #b8950a);
+      color: #dab305;
+      padding: 100px 0 100px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .faq-page-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    
+    .faq-page-header .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .faq-page-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #fff;
+      max-width: 100%;
+      word-wrap: break-word;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    .faq-page-subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      color: #f8f9fa;
+      max-width: 100%;
+      word-wrap: break-word;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Mobile responsive styles for FAQ hero section */
+    @media (max-width: 768px) {
+      .faq-page-header {
+        padding: 60px 0 40px;
+        background-attachment: scroll;
+      }
+      
+      .faq-page-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      
+      .faq-page-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+        line-height: 1.4;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faq-page-header {
+        padding: 40px 0 30px;
+        background-size: cover;
+        background-position: center center;
+      }
+      
+      .faq-page-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        line-height: 1.2;
+      }
+      
+      .faq-page-subtitle {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        line-height: 1.3;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .faq-page-header {
+        padding: 30px 0 25px;
+      }
+      
+      .faq-page-title {
+        font-size: 1.3rem;
+        padding: 0 8px;
+      }
+      
+      .faq-page-subtitle {
+        font-size: 0.8rem;
+        padding: 0 8px;
+      }
+    }
+    
+    .faq-section {
+      padding: 60px 0;
+    }
+    
+    .faq-category {
+      margin-bottom: 40px;
+    }
+    
+    .faq-category-title {
+      color: #171716;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #1a1a19;
+      padding-bottom: 10px;
+    }
+    /* FAQ Section */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid #ccc;
+  background-color: #f3f2e6;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.faq-btn:hover {
+  background:linear-gradient(to right gold,white);
+  color: #000;
+  border-color: #888;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background-color:#fcfcfc;
+  border-top: 1px solid #ddd;
+}
+
+/* Floating Action Buttons */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.floating-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.call-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .floating-buttons {
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .floating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+ 
+  </style>
+</head>
+<body>
+
+
+     <!-- Header Section -->
+  <div class="container-fluid top-header">
+    <div class="row align-items-center px-3">
+      <div class="col-md-6 col-12 address">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>Sristar Gold Company,280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</span>
+      </div>
+      
+           <div class="col-md-6 col-12 company-brand d-flex align-items-center justify-content-md-end justify-content-start gap-3">
+  <!-- Facebook Icon -->
+  <a href="#" class="text-dark fs-5 d-flex align-items-center" title="Facebook">
+    <i class="bi bi-facebook me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Instagram Icon -->
+  <a href="#" class="text-dark fs-5 d-flex align-items-center" title="Instagram">
+    <i class="bi bi-instagram me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- WhatsApp Icon -->
+  <a href="#" class="text-dark fs-5 d-flex align-items-center" title="WhatsApp">
+    <i class="bi bi-whatsapp me-1"></i> <span style="font-size: 0.85rem;"></span>
+  </a>
+
+  <!-- Company Name -->
+  <!-- <span class="fw-bold" style="color: #0b0b0b;">Sristar Gold Company</span>
+</div> -->
+
+
+        <!-- <span class="company-name"></span> -->
+      </div>
+    </div>
+  </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gold Jewellery Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .navbar-custom {
+      background: linear-gradient(to right, #f9c4d2, #ffd700); /* pinkish to gold */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #0e0f0f !important;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px gold;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #6b003b !important; /* deep pink */
+      margin-right: 10px;
+    }
+
+    .nav-link:hover {
+      color: #000;
+      text-shadow: 1px 1px 1px gold;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("Images/");
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="Images/2695556-middle.webp" alt="Logo" />
+        Sristar Gold Company
+      </a>
+
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus .html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="s1.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="branches.html">Branches</a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="Awards.html">Awards</a></li>
+             <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- FAQ Header -->
+<section class="faq-page-header">
+  <div class="container">
+    <h1 class="faq-page-title">Frequently Asked Questions</h1>
+    <p class="faq-page-subtitle">Find answers to all your questions about selling gold</p>
+  </div>
+</section>
+
+<!-- FAQ Content -->
+<section class="faq-section">
+  <div class="container">
+    
+    <!-- General Questions -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">General Questions</h3>
+      
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">1. How do you determine how much to pay for my items?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>We determine the amount based on the gold content (in Karat), the weight of the items, and the daily rate of gold and silver. Our German Karat Meter machine provides accurate testing results.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">2. Will my gold be returned if I don't accept your offer?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, absolutely! Your gold will be returned to you immediately if you don't accept our offer. There's no obligation to sell.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">3. Which documents are required for selling or buying jewelry?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>You'll need a valid ID Proof (Aadhar/PAN/Driving License) and an Address Proof (Aadhar/Utility Bill/Bank Statement). These are mandatory for all transactions.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">4. Once sold, can I buy back my assets later?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Once you sell the items, they cannot be bought back as they are processed immediately. However, you can always purchase new items from our store at competitive rates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment & Process -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">Payment & Process</h3>
+      
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">5. What payment methods do you offer?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>We offer multiple payment options including instant cash, cheque, NEFT, RTGS, and bank transfers. You can choose the method that's most convenient for you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">6. How long does the evaluation process take?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our evaluation process typically takes 15-30 minutes depending on the number of items. We use advanced German Karat Meter technology for quick and accurate results.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">7. Do you charge any fees for evaluation?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>No, our evaluation service is completely free. There are no hidden charges or fees. You only pay if you decide to sell your items to us.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Items & Quality -->
+    <div class="faq-category">
+      <h3 class="faq-category-title">Items & Quality</h3>
+      
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">8. What types of gold items do you accept?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>We accept all types of gold items including jewelry, coins, bars, ornaments, broken jewelry, and even dental gold. The purity can range from 8K to 24K.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">9. Do you buy silver and diamonds too?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we buy silver items, diamonds, and other precious stones. Each item is evaluated separately using appropriate testing methods.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-btn" onclick="toggleFAQ(this)">
+          <span class="faq-question">10. What if my jewelry has stones or other metals?</span>
+          <span class="faq-arrow">▼</span>
+        </button>
+        <div class="faq-answer">
+          <p>We carefully separate and evaluate each component. Gold content is assessed separately from stones and other metals, ensuring you get fair value for each element.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-auto">
+        <button class="btn btn-view-more" onclick="window.location.href='index.html'" style="background-color: gold;">
+          BACK TO HOME
+          <span class="arrow-right">←</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+function toggleFAQ(button) {
+  const faqItem = button.parentElement;
+  const faqAnswer = faqItem.querySelector('.faq-answer');
+  const arrow = button.querySelector('.faq-arrow');
+  
+  // Toggle the answer visibility
+  if (faqAnswer.style.display === 'block') {
+    faqAnswer.style.display = 'none';
+    arrow.textContent = '▼';
+    button.classList.remove('active');
+  } else {
+    faqAnswer.style.display = 'block';
+    arrow.textContent = '▲';
+    button.classList.add('active');
+  }
+}
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sristar Gold Company</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <style>
+    /* === Global Reset === */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0d8d8;
+    }
+
+    /* === Gold Header === */
+    .gold-header {
+      background: linear-gradient(90deg, #6f42c1, #7e57c2);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gold-header .company-logo {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 2px solid gold;
+      box-shadow: 0 0 15px #fff, 0 0 25px gold;
+      margin-right: 15px;
+    }
+
+   .gold-header .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFD700, #FFC107, #FFECB3);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Fallback */
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+    @keyframes shine {
+      0% {
+        background-position: 0% center;
+      }
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    /* Mobile Responsive Header */
+    @media (max-width: 576px) {
+      .gold-header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .gold-header .company-logo {
+        margin: 0 auto 10px;
+      }
+    }
+
+    /* === Footer === */
+   .footer-link {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.social-icons a {
+  background: #0e0d0d;
+      color: gold;
+      padding: 8px;
+      border-radius: 50%;
+      font-size: 1rem;
+      transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+transform: scale(1.1);
+      background: gold;
+      color: #0a0a0a;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="gold-header">
+    <img src="Images/2695556-middle.webp" alt="Company Logo" class="company-logo">
+    <div class="company-name">Sristar Gold Company</div>
+  </div>
+
+  
+<!--Footer-->
+
+
+<!-- ======= Business Footer Start ======= -->
+<footer class="footer bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
+        <h5 class="text-uppercase text-warning mb-3"><b>SRISTAR GOLD COMPANY</b></h5>
+        <p class="footer-description">
+       Transform your gold into immediate rewards, hassle-free and secure.
+At SriStar Gold, we value your trust as much as your gold
+        </p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Quick links</h6>
+        <ul class="list-unstyled">
+           <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="aboutus .html" class="footer-link">About Us</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="branches.html" class="footer-link">Branches</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Us </a></li>
+          <li><a href="Awards.html" class="footer-link">Awards</a></li>
+               <li><a href="career.html" class="footer-link">Career</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-3 col-md-6 col-6 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Contact</h6>
+        <p class="contact-info"><i class="fas fa-map-marker-alt me-2"></i>280/1, Anniamma Arcade, 2nd Floor, Sampige Road, 18th Cross Rd, signal, Malleshwaram, Bengaluru, Karnataka 560003</p>
+        <p class="contact-info"><i class="fas fa-envelope me-2"></i> sristargold@gmail.com</p>
+        <p class="contact-info"><i class="fas fa-phone me-2"></i>6366333444</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <h6 class="text-uppercase fw-bold text-warning mb-3">Newsletter</h6>
+        <p>Subscribe to receive business insights and news.</p>
+        <form action="#" method="POST" class="mt-3">
+          <div class="row g-2">
+            <div class="col-12">
+              <input type="email" class="form-control" placeholder="Your email" required>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-warning w-100">
+                <i class="fas fa-paper-plane me-2"></i>Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Social Icons -->
+        <div class="social-icons mt-4">
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/1234567890" target="_blank" class="text-white me-3"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary" />
+    <div class="text-center small text-muted">
+      &copy; 2025 sristar gold Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/6366333444" target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+916366333444" class="floating-btn call-btn" title="Call Now">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
